@@ -16,7 +16,7 @@ let normalizedChoose = kinolar.map((kino, i) => {
 })
 
 let createMovieElement = function(movie) {
-  elChooseList.innerHTML = "";
+  elChooseList.innerHTML = null;
 
   let movieElement =  elTemplateItem.cloneNode(true);
   $(".card-title", movieElement).textContent = movie.title;
