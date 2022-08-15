@@ -47,6 +47,7 @@ elSearchForm.addEventListener("submit", (evt) => {
 
   let searchTo = normalizedChoose.filter((movie) => {
     if (movie.title.match(searchMovie)) {
+      elSearchInput.value = null
       return movie.title.match(searchMovie);
     }
   })
